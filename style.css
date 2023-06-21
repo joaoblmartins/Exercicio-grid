@@ -64,23 +64,27 @@ img{
 }
 
 .container{
-    max-width: 1200px;
     border: 1px solid #fff;
-    margin: 0 auto;
+    max-width: 1200px;
+    max-width: 0 auto;
     display: grid;
     grid-template-areas: 
     "sidenav item item"
     "sidenav item item"
     "sidenav item item"
     "footer footer footer";
+    gap: 20px;
+    padding: 0px 20px 0px 20px;
+    justify-content: center;
 }
 
 .sidenav{
     width: 350px;
+    min-width: 250px;
     height: 700px;
     border-color: #ccc;
     border-radius: 20px;
-    grid-area: "sidenav";
+    grid-area: "item";
     grid-row: sidenav;
 }
 
